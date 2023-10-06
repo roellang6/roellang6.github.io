@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+	overflow:hidden;
 }
 body {
     display: flex;
@@ -11,6 +12,7 @@ body {
     min-height: 100vh;
     background: #00163F;
     user-select: none;
+	overflow:hidden;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
