@@ -1,3 +1,6 @@
+*,html{
+	overflow:hidden;
+}
 body {
   --scrollX: 0px;
   margin: 0;
