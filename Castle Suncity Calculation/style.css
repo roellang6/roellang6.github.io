@@ -34,7 +34,7 @@ body {
 	-user-select: none;
 
 	-webkit-tap-highlight-color: transparent; /* transparent with keyword */
-
+	overflow:hidden;
 }
 
 body[data-s="title"]::after,
