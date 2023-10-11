@@ -467,7 +467,7 @@ dialog::backdrop {
 
 dialog .title,
 #gameEndMessage {
-  font-size: 5rem;
+  font-size: 3rem;
   text-transform: uppercase;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
