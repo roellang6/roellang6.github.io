@@ -519,7 +519,7 @@ section,
 }
 
 #gameEndMessage span {
-  font-size: 3rem;
+  font-size: 1rem;
   animation: dancing 850ms ease-in-out infinite;
 }
 
@@ -606,10 +606,10 @@ dialog button {
 
 aside {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: normal;
   padding: 24px;
-  position: absolute;
+  position: relative;
   max-width: 400px;
   width: auto;
   left: 100px;
@@ -691,7 +691,7 @@ aside p {
 
   dialog .title,
   dialog p {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   #gameEndMessage {
