@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Castle Suncity Calculation</title>
+    <link href="./favicon.png" rel="icon shortcut" />
+    <link href="./style.css" rel="stylesheet" />
+    <style id="s"></style>
+  </head>
+  <body data-s="title">
+    <button type="button" id="soundButton"></button>
+    <section id="title">
+      <dialog id="titleDialog">
+        <form method="dialog">
+          <h1 class="title">Castle Suncity Calculation</h1>
+          <button class="button">Play <small>with sound</small></button>
+          <button class="button" value="no-sound">
+            Play <small>without sound</small>
+          </button>
+        </form>
+      </dialog>
+    </section>
+    <section id="menu">
+      <dialog id="menuDialog">
+        <form method="dialog">
+          <h2 class="title">Choose a level</h2>
+          <nav id="levelList"></nav>
+        </form>
+      </dialog>
+    </section>
+    <aside data-t="0">
+      <p>Welcome to <b>Castle Suncity Calculation</b>!</p>
+      <p>Your goal is to conquer towers by fighting monsters.</p>
+      <p>Click on this little blob to kill it!</p>
+    </aside>
+
+    <aside data-t="1">
+      <p>Well done! When you kill a monster, you gain its power.</p>
+      <p>
+        In order to win a fight, you must have <b>more</b> power than your
+        target: if you have the same power, you'll lose!
+      </p>
+    </aside>
+
+    <aside data-t="3">
+      <p>Oh, some elementary blobs!</p>
+      <p>
+        The last one is powerful with its 45 of power... But don't worry: when
+        you kill a monster, you absorb its element and your
+        <b>next</b> attack will use it.
+      </p>
+      <p>
+        <span class="e p"></span> monsters are weak against
+        <span class="e f"></span> attacks: your power will count
+        <b>twice</b> against this green blob!
+      </p>
+    </aside>
+
+    <aside data-t="4">
+      <p>
+        Don't forget: the element is available only for your
+        <b>next</b> attack.
+      </p>
+    </aside>
+
+    <aside data-t="5">
+      <p>
+        If you fight en elementary monster with a weaker element, your power
+        will be <b>divided</b> by two for this duel.
+      </p>
+      <p>
+        <b>You start this level with <span class="e f"></span> element</b>,
+        which is weak against <span class="e a"></span>...
+      </p>
+    </aside>
+
+    <aside data-t="6">
+      <p>
+        There're three elements: <span class="e f"></span>,
+        <span class="e a"></span> and <span class="e p"></span>.
+        <br />
+        Each element is strong against another one:
+      </p>
+      <p>
+        <span class="e f"></span> > <span class="e p"></span> >
+        <span class="e a"></span> >
+        <span class="e f"></span>
+      </p>
+    </aside>
+
+    <aside data-t="9">
+      <p>
+        Hm, beware of these skeletons...
+        <br />When you kill them, you don't gain their power... You
+        <b>lose</b> it!
+      </p>
+      <p>If your own power reaches 0 or below, <b>you die</b>!</p>
+    </aside>
+
+    <aside data-t="11">
+      <p>Like blobs, skeletons can be attached to some element.</p>
+    </aside>
+
+    <aside data-t="13">
+      <p>
+        These wizards have strange magic...
+        <br />When you kill them, you gain their power...
+        <b>but the other monsters in the same tower gain it too!</b>
+      </p>
+    </aside>
+
+    <aside data-t="16">
+      <p>What about elementary wizards?</p>
+    </aside>
+
+    <aside data-t="19">
+      <p>
+        Oh! Potions!<br />
+        You can't lose against potions: you simply drink them and your power is
+        modified according to their value.
+      </p>
+    </aside>
+
+    <aside data-t="20">
+      <p>Well... You still can die if your power reaches 0 or below...</p>
+    </aside>
+
+    <aside data-t="22">
+      <p>
+        Potions can also contain some elements!<br />
+        When drinking a <b>positive</b> potion, <b>its effect</b> will be
+        doubled if your element is better, or divided by two if it's weaker.<br />
+        When drinking a <b>negative</b> potion, <b>its effect</b> will be
+        doubled if your element is weaker, or divided by two if it's better.<br />
+        Try to guess your next power before drinking potions in this level!
+      </p>
+    </aside>
+    <section id="game">
+      <dialog id="gameOverDialog">
+        <form method="dialog">
+          <p class="title split">Too bad!</p>
+          <button class="button">Retry</button>
+        </form>
+      </dialog>
+      <dialog id="endLevelDialog">
+        <form method="dialog">
+          <p class="title">Congrats!</p>
+          <p id="gameEndMessage" class="split">
+            You've finished all the levels, you're the best!
+          </p>
+          <button class="button">
+            <span class="next">Next</span>
+            <span class="menu">Menu</span>
+          </button>
+        </form>
+      </dialog>
+      <div id="c" class="tower-container"></div>
+    </section>
+
+    <section id="editor">
+      <aside style="display: block; position: fixed; z-index: 9">
+        <p><b>Build your own level!</b></p>
+        <label>
+          Share direct link to your level
+          <input
+            readonly
+            value="133"
+            type="url"
+            id="cu"
+            onClick="this.select();"
+          />
+        </label>
+        <div>
+          <a id="ca" class="button" target="_blank"
+            ><small>Test level ⭷</small></a
+          >
+          <hr />
+          <a id="cs" class="button" target="_blank" rel="opener"
+            ><small>Save level ⭷</small></a
+          >
+          <a
+            href="https://adrien-gueret.github.io/number_knight/your_levels.html"
+            class="button"
+            target="_blank"
+            rel="opener"
+            ><small>All your levels ⭷</small></a
+          >
+        </div>
+      </aside>
+      <div id="ce" class="tower-container">
+        <div class="tower current">
+          <div class="tower-floor" data-e="none">
+            <div contenteditable class="floor-value value">10</div>
+            <div class="character"></div>
+            <div role="button" tabindex="1" class="e none">◆</div>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	<script>window.addEventListener('contextmenu', function (e) { e.preventDefault(); }); </script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
