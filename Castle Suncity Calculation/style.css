@@ -47,6 +47,7 @@ body:not(.walking)
   section:not(#editor)
   .tower-floor:not(.destroying)[data-e]::after {
   background-image: url(sprites.png);
+  overflow:hidden;
 }
 
 #levelList {
