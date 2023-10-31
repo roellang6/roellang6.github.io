@@ -1302,9 +1302,9 @@ function e(r) {
                     Z.fillText(r, 170, 190 + 80 * t)
                 }
             }
-            )) : Z.fillText("Space i9 Invader Last Stand", 240, 350),
+            )) : Z.fillText("Space m88 Shooter impact", 240, 350),
             Z.font = "20px Arial",
-            Z.fillText("<Press anywhere to play>", 240, 670),
+            Z.fillText("<Touch anywhere to play>", 240, 670),
             (ft || Mt[13] || Kt(9)) && (G = 2,
             Bt = new t("enemy"),
             Ct = new t("powerup"),
