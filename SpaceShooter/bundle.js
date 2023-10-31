@@ -967,7 +967,7 @@ function kt(t, e, r, a, l, h) {
             return;
         let a = r - h;
         return bt(K, [t += a * l * f, e += a * l * M, n, i, lt]) && (pt(),
-        !O) || e - i / 2 > 900 || 0 > e + i / 2 || t - n / 2 > 580 || 0 > t + n / 2 ? void 0 : (h = r,
+        !O) || e - i / 2 > 700 || 0 > e + i / 2 || t - n / 2 > 480 || 0 > t + n / 2 ? void 0 : (h = r,
         Z.drawImage(at[r % at.length | 0], t - n / 2, e - i / 2),
         2)
     }
@@ -1001,10 +1001,10 @@ function Ot(t) {
 let Bt, Ct, It, Qt, jt, Ft, Nt, Gt, Ut = 5;
 function $t(t) {
     t.preventDefault();
-    let e = 580 / 900
+    let e = 480 / 700
       , [r,a] = Y.offsetWidth / Y.offsetHeight > e ? [Y.offsetHeight * e, Y.offsetHeight] : [Y.offsetWidth, Y.offsetWidth / e]
       , [l] = t.changedTouches || [t];
-    return [Math.floor(580 * (l.pageX - (Y.offsetWidth - r) / 2) / r), Math.floor(900 * (l.pageY - (Y.offsetHeight - a) / 2) / a)]
+    return [Math.floor(480 * (l.pageX - (Y.offsetWidth - r) / 2) / r), Math.floor(700 * (l.pageY - (Y.offsetHeight - a) / 2) / a)]
 }
 self.onmousedown = t=>{
     $t(t),
@@ -1037,8 +1037,8 @@ self.onkeydown = self.onkeyup = t=>{
     Mt[t.keyCode] = t.type[5]
 }
 ,
-Y.width = 580,
-Y.height = 900,
+Y.width = 480,
+Y.height = 700,
 function e(r) {
     2 == G ? (t=>{
         let e = t - Gt;
@@ -1069,14 +1069,14 @@ function e(r) {
                 D += r / a * t) : (q = S,
                 D = k)
             }
-            E > q ? q = E : q > 580 - E && (q = 580 - E),
-            X > D ? D = X : D > 900 - X && (D = 900 - X),
+            E > q ? q = E : q > 480 - E && (q = 480 - E),
+            X > D ? D = X : D > 700 - X && (D = 700 - X),
             K = [q, D, V, W, R]
         }
         Z.fillStyle = "#002",
         Z.fillRect(0, 0, 1e9, 1e9);
         for (let t, e = 100; e--; Z.fillStyle = P[e % P.length],
-        i(Z, -60 * (1 - e / 100) * q / (580 - V) + 102797 * (1 + Math.sin(t)) * e % 540, 900 * (Math.tan(e / 9) + t * r / 3e3) % 900, 3.3 * (t - .3)))
+        i(Z, -60 * (1 - e / 100) * q / (480 - V) + 102797 * (1 + Math.sin(t)) * e % 540, 700 * (Math.tan(e / 9) + t * r / 3e3) % 700, 3.3 * (t - .3)))
             t = 150 / (3 * e + 200);
         let a = O
           , l = []
@@ -1149,7 +1149,7 @@ function e(r) {
                 if (i > 0) {
                     let r = e - o;
                     n ? 0 == c ? (f += .1 * r,
-                    f + l / 2 > 580 && (f = 580 - l / 2,
+                    f + l / 2 > 480 && (f = 480 - l / 2,
                     c = 1)) : (f -= .1 * r,
                     0 > f - l / 2 && (f = l / 2,
                     c = 0)) : (M += .2 * r,
@@ -1196,7 +1196,7 @@ function e(r) {
             let h = [t, e += 5 * (l - a) / 32, ht.width, ht.height, nt]
               , n = .75 + Math.sin(l / 200) / 4
               , i = yt[r];
-            return !O && bt(K, h) ? At[r](l) : e - Math.floor(ht.height / 2) > 900 ? void 0 : (a = l,
+            return !O && bt(K, h) ? At[r](l) : e - Math.floor(ht.height / 2) > 700 ? void 0 : (a = l,
             p(()=>{
                 Z.translate(t, e),
                 Z.drawImage(ht, -ht.width / 2, -ht.height / 2),
@@ -1232,7 +1232,7 @@ function e(r) {
                         a > 0 && qt(A, a, o, x + 17 * r, u, .45, m),
                         i.map(t=>A.push(St(s(t, g, w), o - g / 2, x - w / 2, 500, m))),
                         ct(f);
-                    if (900 >= x - w / 2) {
+                    if (700 >= x - w / 2) {
                         if (M = m,
                         Z.drawImage(t, o - g / 2, x - w / 2),
                         k > 0 && p(()=>{
@@ -1304,7 +1304,7 @@ function e(r) {
             }
             )) : Z.fillText("Space Shooter impact", 240, 350),
             Z.font = "20px Arial",
-            Z.fillText("<Touch anywhere to play>", 300, 870),
+            Z.fillText("<Touch anywhere to play>", 240, 670),
             (ft || Mt[13] || Kt(9)) && (G = 2,
             Bt = new t("enemy"),
             Ct = new t("powerup"),
