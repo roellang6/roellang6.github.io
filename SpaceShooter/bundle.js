@@ -1302,7 +1302,7 @@ function e(r) {
                     Z.fillText(r, 170, 190 + 80 * t)
                 }
             }
-            )) : Z.fillText("Space m88 Shooter impact", 240, 350),
+            )) : Z.fillText("Space Shooter impact", 240, 350),
             Z.font = "20px Arial",
             Z.fillText("<Touch anywhere to play>", 240, 670),
             (ft || Mt[13] || Kt(9)) && (G = 2,
