@@ -777,62 +777,7 @@ function MainMenu(game) {
       [.7, '#720b81'],
       [1, '#c9c0db']
     ]);
-
-    this.c.save();
-    this.c.translate(this.game.halfWidth - 176, this.game.halfHeight / 2);
-    this.c.scale(16, 16);
-    this.c.beginPath();
-    this.c.moveTo(0,0);
-    drawLine(this.c, [
-      [2,0],
-      [2,3],
-      [4,3],
-      [4,5],
-      [0,5],
-      [0,0]
-    ]);
-    this.c.moveTo(5, 5);
-    drawLine(this.c, [
-      [7,0],
-      [9,5],
-      [5,5]
-    ]);
-    this.c.moveTo(10, 0);
-    drawLine(this.c, [
-      [14,0],
-      [13,3],
-      [14,3],
-      [14,5],
-      [10,5],
-      [11,2],
-      [10,2],
-      [10,0]
-    ]);
-    this.c.moveTo(15, 0);
-    drawLine(this.c, [
-      [18,0],
-      [18,1.5],
-      [17,1.5],
-      [17,2],
-      [18,2],
-      [18,3.5],
-      [17,3.5],
-      [17,4],
-      [18,4],
-      [18,5],
-      [15,5],
-      [15,0]
-    ]);
-    this.c.moveTo(19, 0);
-    drawLine(this.c, [
-      [21,0]
-    ]);
-    this.c.bezierCurveTo(22.5, 0, 22.5, 3, 21, 3);
-    drawLine(this.c, [
-      [22,5],
-      [19,5],
-      [19,0]
-    ]);
+ 
     this.c.fillStyle = gradient;
     this.c.fill();
     this.c.strokeStyle = '#000293';
@@ -847,59 +792,11 @@ function MainMenu(game) {
       [0, '#fb6cfa'],
       [1, '#f216f4']
     ]);
-    this.c.save();
-    this.c.translate(this.game.halfWidth + 10, (this.game.halfHeight / 2) + 50);
-    this.c.scale(8, 8);
-    this.c.beginPath();
-    this.c.moveTo(0,1);
-    drawLine(this.c, [
-      [2,0],
-      [5,3],
-      [2,2],
-      [2,7],
-      [5,6],
-      [2,9],
-      [0,7],
-      [0,1]
-    ]);
-    this.c.moveTo(7,1);
-    drawLine(this.c, [
-      [9,0],
-      [10,0],
-      [21,1],
-      [10,1],
-      [8,2],
-      [8,7],
-      [10,7],
-      [11,6],
-      [11,4],
-      [12,5],
-      [12,6],
-      [13,6],
-      [10,9],
-      [9,8],
-      [8,9],
-      [6,7],
-      [7,1]
-    ]);
-    this.c.moveTo(14,1);
-    drawLine(this.c, [
-      [16,2],
-      [13,9],
-      [14,1]
-    ]);
-    this.c.moveTo(13,0);
-    drawLine(this.c, [
-      [20,0],
-      [21,1],
-      [22,1],
-      [15,5],
-      [19,9],
-      [13,5],
-      [20,1],
-      [13,2],
-      [13,0],
-    ]);
+
+ 
+   
+  
+    
     this.c.fillStyle = gradient;
     this.c.fill();
     this.c.restore();
