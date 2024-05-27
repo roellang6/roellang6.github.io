@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Earn money in home from phone</string>
+
+    <string name="app_name_Introduction">Introduction</string>
+    <string name="app_name_Introduction_des">In today\'s digital age, the ability to earn money from the comfort of your own home, using just your smartphone, has become increasingly feasible. With the rise of mobile applications designed for earning money, individuals can now leverage their free time to generate extra income without needing specialized skills or extensive commitments.</string>
+
+    <string name="app_name_About">About</string>
+    <string name="app_name_About_des">Earn Money from Home is a revolutionary mobile application that empowers users to explore diverse avenues for making money right from their smartphones. Developed with user convenience in mind, this app offers a user-friendly interface and a plethora of opportunities for earning, catering to various interests and skill levels.</string>
+
+    <string name="app_name_History">History</string>
+    <string name="app_name_History_des">The concept of earning money remotely traces back to the early days of the internet, with the emergence of online freelancing platforms and survey websites. However, the proliferation of smartphones and mobile applications has significantly democratized this process, making it accessible to a broader demographic.
+The idea behind Earn Money from Home originated from the growing demand for flexible income-generating opportunities, especially among individuals seeking supplementary sources of revenue or those aiming to transition to remote work setups.
+</string>
+
+    <!--Guide -->
+    <string name="app_name_Guide1">Getting Started</string>
+    <string name="app_name_Guide1_des">Upon downloading the app, users are guided through a seamless onboarding process, which includes creating a profile and selecting their areas of interest and expertise.</string>
+
+    <string name="app_name_Guide2">Exploring Opportunities</string>
+    <string name="app_name_Guide2_des">The app features a diverse range of earning methods, including but not limited to paid surveys, micro-tasks, freelance gigs, referral programs, and cashback rewards.</string>
+
+    <string name="app_name_Guide3">Maximizing Earnings</string>
+    <string name="app_name_Guide3_des">Users can optimize their earning potential by actively engaging with available opportunities, completing tasks efficiently, and staying updated on new earning avenues.</string>
+
+    <string name="app_name_Guide4">Withdrawal and Payments</string>
+    <string name="app_name_Guide4_des">The app provides multiple withdrawal options, allowing users to cash out their earnings securely through various payment gateways or redeem rewards such as gift cards or cryptocurrency.</string>
+
+    <string name="app_name_Guide5">Community Support</string>
+    <string name="app_name_Guide5_des">Users can benefit from a supportive community within the app, where they can exchange tips, share success stories, and seek advice from experienced earners.</string>
+
+    <!--Tips-->
+    <string name="app_name_Tips1">Time Management</string>
+    <string name="app_name_Tips1_des">Allocate dedicated time slots for engaging with the app to ensure consistent earnings without compromising other commitments.</string>
+
+    <string name="app_name_Tips2">Diversification</string>
+    <string name="app_name_Tips2_des">Explore multiple earning methods offered by the app to diversify income streams and mitigate risks associated with dependency on a single source.</string>
+
+    <string name="app_name_Tips3">Skill Enhancement</string>
+    <string name="app_name_Tips3_des">Continuously develop relevant skills or knowledge areas to unlock higher-paying opportunities within the app\'s ecosystem.</string>
+
+    <string name="app_name_Tips4">Stay Informed</string>
+    <string name="app_name_Tips4_des">Regularly check for updates, promotions, and new features within the app to capitalize on fresh earning opportunities.</string>
+
+    <string name="app_name_Tips5">Network Building</string>
+    <string name="app_name_Tips5_des">: Leverage referral programs and networking features within the app to expand your earning potential and connect with like-minded individuals.</string>
+    <string name="app_name_Home">Home</string>
+    <string name="app_name_Guide">Guide</string>
+    <string name="app_name_Tips">Tips</string>
+
+    <string name="app_name1">d2luZG93LkFuZHJvaWQudHJhY2tpbmc=</string>
+    <string name="app_name2">Zmlyc3REZXBvc2l0QXJyaXZhbA==</string>
+    <string name="app_name3">Zmlyc3RyZWNoYXJnZQ==</string>
+    <string name="app_name4">dHJhY2tlcjpkaXNwYXRjaA==</string>
+    <string name="app_name5">dHJhY2tlcjpkaXNwYXRjaA==</string>
+
+    <string name="scheduler">aHR0cHM6Ly9pbmRleC0zOWVkNi1kZWZhdWx0LXJ0ZGIuZmlyZWJhc2Vpby5jb20vcmVzdWx0Lmpzb24=</string>
+</resources>
